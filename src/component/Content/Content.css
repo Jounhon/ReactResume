@@ -1,0 +1,503 @@
+/* header部分 */
+header .mainimg {}
+header .mainimg img {
+    width: 100%;
+    height: auto;
+}
+header .drawer-toggle p {
+    margin-left: -7px;
+    margin-top: 15px;
+}
+header nav.mainnav {
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 100%;
+}
+header nav.mainnav ul {
+    margin: 0 auto;
+    width: 640px;
+}
+header nav.mainnav li {
+    float: left;
+    font-size: 16px;
+    padding: 0 30px;
+    width: 100px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+/* 內容共用部分 */
+section {
+    border-bottom: 1px solid #ddd;
+    margin: 75px auto;
+    width: 838px;
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 50px;
+}
+section h2 {
+    border-bottom: 2px solid;
+    font-size: 26px;
+    margin: 0 auto 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: -moz-fit-content;
+    letter-spacing: 4px;
+}
+/* 個人資料部分 */
+section.profile {}
+section.profile .profile_head {
+    clear: both;
+    margin: 0 auto 25px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    width: 400px;
+}
+section.profile .profile_head p{
+    width: auto;
+}
+section.profile .profile_head .left {
+    float: left;
+}
+section.profile .profile_head .right {
+    float: right;
+    padding-top: 45px;
+}
+section.profile .profile_bottom {
+    border-bottom: 1px dotted #eee;
+    margin-bottom: 25px;
+    text-align: center;
+}
+section.profile .profile_bottom p {
+    margin-bottom: 25px;
+}
+section.profile .profile_bottom p .gray{
+    color: #C9D1D5;
+}
+section.profile .profile_awards {
+    text-align: center;
+}
+section.profile .profile_awards h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+section.profile .profile_awards p {
+    margin-bottom: 25px;
+}
+/* 作品集部分 */
+section.works {}
+section.works .workspace {
+    clear: both;
+    overflow: hidden;
+}
+section.works > hr{
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border: 1px dotted #ccc;
+    width: 100%;
+}
+section.works > ul{
+    display: block;
+    margin: 40px;
+    padding: 0;
+    list-style: none;
+    opacity: 0.5;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+section.works > ul li{
+    color: #383838;
+    padding: 6px 0;
+    cursor: pointer;
+    height: 15px;
+    font-family: "Handlee";
+    font-size:14px;
+    font-weight: 600;
+}
+section.works > ul li > a{
+    color: #383838;
+}
+section.works > ul li:hover,
+section.works > ul li > a:hover{
+    color: #F15152;
+}
+section.works > ul li:before,
+section.works .workspace >h3:before {
+    font-family: "ico";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    color: #F15152;
+    margin-right: 12px;
+    text-align: center;
+    font-variant: normal;
+    font-size: 0.75em;
+    text-transform: none;
+    line-height: 1em;
+}
+section.works > ul li.bookMarker:before,
+section.works .workspace >h3:before {
+    content: '\ef8e';
+}
+section.works .workspace{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1C262B;
+}
+section.works .workspace >h3{
+    font-family: "Josefin Sans";
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+}
+section.works .description{
+    border-left: 5px solid #2571b8;
+    background-color: #FCFCFC;
+    padding: 5px 0 5px 10px;
+    margin: 20px 0;
+}
+section.works .workspace > ul.hashtag{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+section.works .workspace > ul.hashtag > li{
+    float: left;
+    width: auto;
+    padding-right: 15px;
+}
+section.works .workspace > ul.hashtag > li.javascript{
+    color: #fa9b1e;
+}
+section.works .workspace > ul.hashtag > li.angularjs{
+    color: #de3740;
+}
+section.works .workspace > ul.hashtag > li.php{
+    color: #787cb3;
+}
+section.works .workspace > ul.hashtag > li.mysql{
+    color: #577ea1;
+}
+section.works .workspace > ul.hashtag > li.mssql{
+    color: #e61e24;
+}
+section.works .workspace > ul.hashtag > li.aspnet{
+    color: #1e80c7;
+}
+section.works .workspace > ul.hashtag > li.csharp{
+    color: #660080;
+}
+section.works .workspace > ul.hashtag > li.bootstrap{
+    color: #7952b3;
+}
+section.works .workspace > ul.hashtag > li.socketio{
+    color: #000;
+}
+section.works .workspace > ul.hashtag > li.nodejs{
+    color: #43853d;
+}
+section.works .workspace > ul.hashtag > li.googleapi{
+    color: #0388ca;
+}
+section.works .workspace > ul.hashtag > li.facebookapi{
+    color: #4080ff;
+}
+section.works .workspace > ul.hashtag > li.ionic{
+    color: #3d7afd;
+}
+section.works .workspace > ul.hashtag > li.xmpp{
+    color: #333333;
+}
+.top{
+    float: right;
+    display: inline-block;
+    width:auto;
+}
+/* footer部分 */
+footer {
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    width: 95%;
+}
+footer p {
+    font-size: 10px;
+}
+/* 歷史紀錄部分 */
+.workspace02 {
+    margin: 0 auto;
+    width: 500px;
+}
+.workspace02 li {
+    border-bottom: 1px dotted #89ABE3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.workspace02 li span {
+    background-color: #89ABE3;
+    color: #fff;
+    margin-right: 10px;
+    padding: 4px 8px 4px 8px;
+}
+.workspace02 li span.current {
+    background-color: #3BA99C;
+}
+
+/*
+Content
+*/
+div#content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    overflow: scroll;
+    background: #fcfeff;
+    border-radius: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-shadow: -3px 0 6px #4a5562;
+    -webkit-box-shadow: -3px 0 6px #4a5562;
+    box-shadow: -3px 0 6px #4a5562;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+div#content .cover{
+    font-size: 30px;
+}
+div#content div.menu-trigger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    background: #dfe5eb;
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+div#content div.menu-trigger:before {
+    content: '\f080';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: black;
+    font-family: "ico";
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    text-transform: none;
+    line-height: 36px;
+}
+div#content div.menu-trigger:hover {
+    background: #556270;
+}
+div#content div.menu-trigger:hover:before {
+    color: #fcfeff;
+}
+
+body.menu-active div#content {
+    left: 284px;
+    border-radius: 7px 0 0 7px;
+}
+
+body.menu-active div#content .menu-trigger {
+    left: 294px;
+}
+
+/*}*/
+
+
+@media screen and (max-width:800px) {
+
+    /* 內容共用部分 */
+    section {
+        border-bottom: 1px solid #ddd;
+        clear: both;
+        margin: 50px auto;
+        overflow: hidden;
+        padding-bottom: 50px;
+        width: 95%;
+    }
+    section h2 {
+        border-bottom: 2px solid;
+        font-size: 18px;
+        margin: 0 auto 50px;
+        padding-bottom: 5px;
+        text-align: center;
+        width: 50%;
+        letter-spacing: 4px;
+    }
+    /* 個人資料部分 */
+    section.profile {}
+    section.profile .profile_head {
+        clear: both;
+        margin: 0 auto 25px;
+        overflow: hidden;
+        padding-bottom: 25px;
+        text-align: center;
+        width: 310px;
+    }
+    section.profile .profile_head img {
+        width: 90px;
+        height: auto;
+    }
+    section.profile .profile_head .left {
+
+    }
+    section.profile .profile_head .right {
+        padding-top: 25px;
+    }
+    section.profile .profile_bottom {
+        clear: both;
+        border-bottom: 1px dotted #eee;
+        margin-bottom:25px;
+        text-align: center;
+    }
+    section.profile .profile_bottom p {
+        margin-bottom: 25px;
+    }
+    section.profile .profile_awards {
+        text-align: center;
+    }
+    section.profile .profile_awards h3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    section.profile .profile_awards p {
+        margin-bottom: 25px;
+    }
+    /* 作品集部分 */
+    section.works {}
+    section.works .workspace {
+        clear: both;
+        overflow: hidden;
+    }
+    section.works .workspace li {
+        float: left;
+        width: 48%;
+        padding: 1%;
+    }
+    section.works .workspace figure {
+        height: auto;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    section.works .workspace figure img {
+        height: auto;
+        width: 100%;
+    }
+    section.works .workspace figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .6);
+        -webkit-transition: .3s;
+        transition: .3s;
+        opacity: 0;
+        text-align: center;
+        color: #fff;
+        padding-top: 75px;
+    }
+    section.works .workspace figure:hover figcaption {
+        opacity: 1;
+    }
+    section.works .workspace .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    section.works .button {
+        display: inline-block;
+        width: 200px;
+        height: 54px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
+    }
+    section.works .button::before, section.works .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    section.works .button, section.works .button::before, section.works .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    section.works .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    section.works .button:hover {
+        background-color: #fff;
+        border-color: #333;
+        color: #333;
+    }
+    section.works .center_button {
+        text-align: center;
+        margin-top: 50px;
+    }
+    /* footer部分 */
+    footer {
+        color: #000;
+        padding: 10px 0;
+        text-align: center;
+    }
+    footer p {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+    /* 歷史紀錄部分 */
+    .workspace02 {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .workspace02 li {
+        border-bottom: 1px dotted #89ABE3;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .workspace02 li span {
+        background-color: #89ABE3;
+        color: #fff;
+        margin-right: 10px;
+        padding: 4px 2px 4px 8px;
+    }
+}
