@@ -4,6 +4,8 @@ import './Content.css';
 import MenuBtn from '../SideMenu/MenuBtn';
 import Cover from './Cover';
 import Collection from './Collection';
+import Profile from './Profile';
+import Experience from './Experience';
 import Footer from '../Footer/Footer';
 
 class Content extends Component{
@@ -14,7 +16,12 @@ class Content extends Component{
             <div className="container" id="content" >
                 <MenuBtn/>
                 <Cover/>
-                <Collection title={"作品集"} description={"以下是學生時期的一些程式作品。\r\n作品資料庫資料大多數都沒有保留，所以僅能以圖片顯示。"}/>
+                <Collection
+                    title={"作品集"}
+                    description={"以下是學生時期的一些程式作品。\r\n作品資料庫資料大多數都沒有保留，所以僅能以圖片顯示。"}
+                />
+                <Profile title={"個人檔案"}/>
+                <Experience title={"工作經歷"}/>
                 <Footer/>
             </div>
         )
