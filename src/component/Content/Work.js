@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
-import { Element } from 'react-scroll'
-
-import { Link } from 'react-scroll'
+import { Element,Link } from 'react-scroll'
 
 class Work extends Component{
     render(){
