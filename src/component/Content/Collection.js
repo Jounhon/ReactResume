@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
+import { Element } from 'react-scroll';
 
 import CollectionList from './CollectionList';
 import Work from './Work';
+
 
 class Collection extends Component{
     constructor(props){
@@ -152,28 +154,30 @@ class Collection extends Component{
     }
     render(){
         return(
-            <section id="Collection" className="works">
-                <h2>{this.props.title}</h2>
-                <p>{this.props.description.split("\r\n").map(function (item,index) {
-                    return(
-                        <span key={index}>
-                            {item}<br/>
-                        </span>
-                    )
-                })}</p>
-                <CollectionList/>
-                <hr/>
-                {
-                    this.state.data.map(function (value,index) {
+            <Element name={"collection"}>
+                <section id="collection" className="works">
+                    <h2>{this.props.title}</h2>
+                    <p>{this.props.description.split("\r\n").map(function (item,index) {
                         return(
-                            <Work
-                                key={index}
-                                data={value}
-                            />
+                            <span key={index}>
+                                {item}<br/>
+                            </span>
                         )
-                    })
-                }
-            </section>
+                    })}</p>
+                    <CollectionList/>
+                    <hr/>
+                    {
+                        this.state.data.map(function (value,index) {
+                            return(
+                                <Work
+                                    key={index}
+                                    data={value}
+                                />
+                            )
+                        })
+                    }
+                </section>
+            </Element>
         )
     }
 }

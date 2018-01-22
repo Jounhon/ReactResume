@@ -1,13 +1,16 @@
 import React,{Component} from 'react';
+import { Element } from 'react-scroll'
+
+import { Link } from 'react-scroll'
 
 class Work extends Component{
     render(){
         return(
-            <div className="workspace" id={this.props.data.id}>
+            <Element className="workspace" id={this.props.data.id} name={this.props.data.id}>
                 <div className="top">
-                    <a href="#collection">
+                    <Link containerId="content" activeClass="active" to={"collection"} spy={true} smooth={true} duration={500}>
                         <i className="icofont icofont-simple-up"></i>TOP
-                    </a>
+                    </Link>
                 </div>
                 <h3>{this.props.data.title}</h3>
                 <ul className={"hashtag"}>
@@ -23,7 +26,7 @@ class Work extends Component{
                         <img key={index} alt={index} src={value.src} style={value.style} />
                     )
                 })}
-            </div>
+            </Element>
         )
     }
 }

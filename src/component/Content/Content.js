@@ -10,7 +10,6 @@ import Footer from '../Footer/Footer';
 
 class Content extends Component{
 
-
     render(){
         return(
             <div className="container" id="content" >
@@ -18,7 +17,7 @@ class Content extends Component{
                 <Cover/>
                 <Collection
                     title={"作品集"}
-                    description={"以下是學生時期的一些程式作品。\r\n作品資料庫資料大多數都沒有保留，所以僅能以圖片顯示。"}
+                    description={"以下是學生時期的一些程式作品。"}
                 />
                 <Profile title={"個人檔案"}/>
                 <Experience title={"工作經歷"}/>
@@ -26,6 +25,7 @@ class Content extends Component{
             </div>
         )
     }
+
 }
 
 export default Content;

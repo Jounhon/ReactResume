@@ -224,6 +224,7 @@ section.works .workspace > ul.hashtag > li.xmpp{
     float: right;
     display: inline-block;
     width:auto;
+    cursor: pointer;
 }
 /* footer部分 */
 footer {

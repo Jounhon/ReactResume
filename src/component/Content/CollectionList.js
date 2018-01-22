@@ -1,17 +1,34 @@
 import React,{Component} from 'react';
+import ScrollLink from "../ScrollLink/ScrollLink";
 
 class CollectionList extends Component{
     render(){
         return(
             <ul>
-                <li className="bookMarker"><a href="#Works1">FAT找茶</a></li>
-                <li className="bookMarker"><a href="#Works2">Cut The Rope</a></li>
-                <li className="bookMarker"><a href="#Works3">校務聯絡App</a></li>
-                <li className="bookMarker"><a href="#Works4">圖書館系統</a></li>
-                <li className="bookMarker"><a href="#Works5">簡易點餐系統</a></li>
-                <li className="bookMarker"><a href="#Works6">簡易小畫家</a></li>
-                <li className="bookMarker"><a href="#Works8">Pet Vacay(畢業專題)</a></li>
-                <li className="bookMarker"><a href="#Works7">Issue Tracking System</a></li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works1"} name={"FAT找茶"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works2"} name={"Cut The Rope"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works3"} name={"校務聯絡App"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works4"} name={"圖書館系統"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works5"} name={"簡易點餐系統"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works6"} name={"簡易小畫家"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works7"} name={"Pet Vacay(畢業專題)"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
+                <li className="bookMarker">
+                    <ScrollLink id={"Works8"} name={"Issue Tracking System"} scrollStepInPx="50" delayInMs="16.66"/>
+                </li>
             </ul>
         )
     }

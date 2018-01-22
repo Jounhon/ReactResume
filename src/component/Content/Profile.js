@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
+import { Element } from 'react-scroll';
 
 import SocialLink from './SocialLink';
+
 
 class Profile extends Component{
     constructor(props){
@@ -37,23 +39,23 @@ class Profile extends Component{
 
     render(){
         return(
-            <section id="profile" className="profile">
-                <h2>{this.props.title}</h2>
-                <div className="profile_text">
-                    <div className="profile_head">
-                        <img className="left" src={this.state.photo.src} alt={this.state.photo.alt} style={this.state.photo.style} />
-                        <p className="right" dangerouslySetInnerHTML={{__html:this.state.description}}></p>
-                    </div>
-                    <div className="profile_bottom">
-                        <p>
+            <Element name={"profile"}>
+                <section id="profile" className="profile" >
+                    <h2>{this.props.title}</h2>
+                    <div className="profile_text">
+                        <div className="profile_head">
+                            <img className="left" src={this.state.photo.src} alt={this.state.photo.alt} style={this.state.photo.style} />
+                            <p className="right" dangerouslySetInnerHTML={{__html:this.state.description}}></p>
+                        </div>
+                        <div className="profile_bottom">
                             <ul>
                                 <SocialLink link={"https://github.com/Jounhon"} img={"https://i.imgur.com/KShuZ6R.png"} style={{width:'48px'}} alt={"github"}/>
                             </ul>
-                        </p>
+                        </div>
+                        <div className="profile_bottom" dangerouslySetInnerHTML={{__html:this.state.about}}></div>
                     </div>
-                    <div className="profile_bottom" dangerouslySetInnerHTML={{__html:this.state.about}}></div>
-                </div>
-            </section>
+                </section>
+            </Element>
         )
     }
 }
